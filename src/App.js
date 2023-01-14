@@ -1,9 +1,10 @@
-import nav from './components/nav'
+import Nav from './components/nav'
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Auctions from './pages/auctions'
-import Drop from './pages/drop'
+import Landlord from './pages/landlord'
+import Tenants from './pages/tenants'
 import Home from './pages/home'
-import Marketplace from './pages/marketplace'
+import Contact from './pages/contactus'
 import  NoPage from './pages/NoPage'
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Nav />}>
           <Route index element={<Home />} />
-          <Route path="auctions" element={<Auctions />} />
-          <Route path="drop" element={<Drop />} />
-          <Route path="market" element={<Marketplace />} />
+          <Route path="landlord" element={<Landlord />} />
+          <Route path="tenants" element={<Tenants />} />
+          <Route path="contactus" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
