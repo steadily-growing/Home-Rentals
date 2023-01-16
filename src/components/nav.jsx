@@ -19,17 +19,17 @@ function nav() {
                     </div>
                     <div className='hover:underline px-12'>
                         <li>
-                            <Link to="/auctions">Auction</Link>
+                            <Link to="/landlord">Landlord</Link>
                         </li>
                     </div>
                     <div className='hover:underline px-12 '>
                         <li>
-                            <Link to="/market">Market</Link>
+                            <Link to="/tenants">Tenants</Link>
                         </li>
                     </div>
                     <div className=' hover:underline px-12 '>
                         <li>
-                            <Link to="/drop">Drop</Link>
+                            <Link to="/contactus">Contact Us</Link>
                         </li>
                     </div>
                     
