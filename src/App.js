@@ -10,6 +10,8 @@ import  NoPage from './pages/NoPage'
 function App() {
   return (
     <div className="App">
+      <div>hey babe</div>
+      <div>eat cake</div>
     <Router>
       <Routes>
         <Route path="/" element={<Nav />}>
