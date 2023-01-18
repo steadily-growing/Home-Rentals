@@ -1,8 +1,14 @@
 import React from 'react'
+import bg from '../assets/bg.png'
+
 
 function home() {
   return (
-    <div>home</div>
+    <div className=''>
+    <img src ={bg}/>
+   
+    </div>
+  
   )
 }
 
