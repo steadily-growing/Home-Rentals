@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family:'DM_Sans';
+  src: local("DMSans-Medium"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\DM_Sans\DMSans-Medium.ttf") format('truetype');
+  font-weight:600;
+}
+@font-face {
+  font-family:'Inter';
+  src: local("Inter-Bold"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Inter\static\Inter-Bold.ttf") format('truetype');
+  font-weight:600;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

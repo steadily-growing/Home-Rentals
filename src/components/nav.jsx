@@ -6,7 +6,7 @@ import logo from '../assets/logo 1.png'
 function Nav() {
 return(
     <>
-            <div className='p-4 absolute'>
+            <div className='p-4 absolute top-0 z-20'>
                 <ul className='flex flex-row w-full justify-center'>
                     <div className='flex flex-row justify-evenly '>
                     <div className='pr-32 text-2xl'>
@@ -17,22 +17,22 @@ return(
                     <div className='px-12' >
                         
                         <li>
-                            <Link to="/"><p className='text-white'>Home</p></Link>
+                            <Link to="/"><p className=' font-[DM_Sans] text-white'>Home</p></Link>
                         </li>
                     </div>
                     <div className='px-12'>
                         <li>
-                            <Link to="/landlord" ><p className='text-white'>Landlord</p></Link>
+                            <Link to="/landlord" ><p className=' font-[DM_Sans] text-white'>Landlord</p></Link>
                         </li>
                     </div>
                     <div className=' px-12 '>
                         <li>
-                            <Link to="/tenants"><p className='text-white'>Tenants</p></Link>
+                            <Link to="/tenants"><p className=' font-[DM_Sans] text-white'>Tenants</p></Link>
                         </li>
                     </div>
                     <div className=' px-12 '>
                         <li>
-                            <Link to="/contactus"><p className='text-white'>Contact Us</p></Link>
+                            <Link to="/contactus"><p className=' font-[DM_Sans] text-white'>Contact Us</p></Link>
                         </li>
                     </div>
                     
