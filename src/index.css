@@ -12,6 +12,11 @@
   src: local("Inter-Bold"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Inter\static\Inter-Bold.ttf") format('truetype');
   font-weight:600;
 }
+@font-face {
+  font-family:'Inter_ExtraBold';
+  src: local("Inter-ExtraBold"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Inter\static\Inter-ExtraBold.ttf") format('truetype');
+  font-weight:bold;
+}
 
 body {
   margin: 0;
