@@ -1,6 +1,6 @@
 import React from 'react'
 import glass from '../assets/glass.png'
-import money from '../assets/money.png'
+import Smallcards from '../components/smallcards'
 
 function homeSection2() {
   return (
@@ -11,14 +11,13 @@ function homeSection2() {
           <hr className="border-2 border-orange-600 w-80 " />
         </div>
 
-        <div>
-          <img src={glass} />
+        <div className='flex'>
+          <img src={glass}/>
+        <Smallcards/>
         </div>
 
       </div>
-      {/* <div className='bg-white rounded shadow-md overflow-hidden'>
-        <img src={money} />
-      </div> */}
+    
     </div>
   )
 }

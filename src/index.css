@@ -30,6 +30,11 @@
   src: local("Inter-ExtraBold"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Inter\static\Inter-ExtraBold.ttf") format('truetype');
   font-weight:bold;
 }
+@font-face {
+  font-family:'Inter';
+  src: local("Inter-SemiBold"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Inter\static\Inter-SemiBold.ttf") format('truetype');
+  font-weight:bold;
+}
 
 body {
   margin: 0;
