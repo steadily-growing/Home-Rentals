@@ -2,7 +2,7 @@ import React from 'react'
 
 function pagination() {
     return (
-        <div className='flex space-evenly justify-center border border-gray-300 rounded bg-white mx-10'>
+        <div className='flex space-evenly justify-center border border-gray-300 rounded bg-white mx-10 relative translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] w-[20%]'>
             <div className='bg-gray-100 border-r p-4'><p className='text-gray-300'>First</p></div>
             <div className=' border-r p-4'>   1 </div>
             <div className='bg-orange-600 border-r '><p className='p-5 text-white'>2</p></div>

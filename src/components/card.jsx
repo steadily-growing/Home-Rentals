@@ -39,7 +39,7 @@ function card() {
 
                     </div>
                 </div>
-                <div className='bg-white rounded-lg shadow-md w-60 oveflow-hidden mx-10'>
+                <div className='bg-white rounded-lg shadow-md w-60 oveflow-hidden mx-4'>
                     <img src={property2} />
                     <div className='flex flex-col px-2'>
                         <span className='font-[DMSans-Bold] font-bold'>
@@ -171,8 +171,10 @@ function card() {
 
 
             </div>
-            <Pagination/>
+             <Pagination/>
         </div>
+       
+        
     )
 }
 
