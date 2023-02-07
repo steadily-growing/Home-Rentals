@@ -8,8 +8,8 @@ import eye from '../assets/eye.png'
 
 function smallcards(){
   return (
-    <div>
-      <div className='flex justify-between w-[auto]'>
+    <div className='flex flex-col'>
+      <div className='flex flex-row justify-between w-[auto]'>
         <div>
           <div className='bg-white rounded-lg shadow-md p-4'>
             <img src={money} />
@@ -54,7 +54,6 @@ function smallcards(){
             <br /> you use</p>
         </div>
       </div>
-
     </div>
   )
 }
