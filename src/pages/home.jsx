@@ -4,6 +4,8 @@ import map from '../assets/map.png'
 import search from '../assets/search.png'
 import Minimum from '../components/minimum'
 import Properties from '../components/properties'
+import Grid from '../components/grid'
+import Flexibility from '../components/flexibility'
 
 
 function home() {
@@ -15,6 +17,11 @@ function home() {
       <img src={search} className='absolute left-96 top-96 pl-64 pt-12' />
       <Minimum />
       <Properties/>
+      <div className='flex px-10 py-10'>
+      <Grid/>
+      <Flexibility/>
+      </div>
+      
     </div>
 
   )
