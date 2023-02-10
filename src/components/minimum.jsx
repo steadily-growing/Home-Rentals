@@ -11,7 +11,7 @@ function homeSection2() {
           <hr className="border-2 border-orange-600 w-80 " />
         </div>
 
-        <div className='flex'>
+        <div className='flex w-full'>
           <img src={glass}/>
         <Smallcards/>
         </div>
