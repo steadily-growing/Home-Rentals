@@ -6,6 +6,7 @@ import Minimum from '../components/minimum'
 import Properties from '../components/properties'
 import Grid from '../components/grid'
 import Flexibility from '../components/flexibility'
+import AddNewProperty from '../components/AddNewProperty'
 
 
 function home() {
@@ -20,7 +21,9 @@ function home() {
       <div className='flex px-10 py-10'>
       <Grid/>
       <Flexibility/>
+     
       </div>
+      <AddNewProperty/>
       
     </div>
 
