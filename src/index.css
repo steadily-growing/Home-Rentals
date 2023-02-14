@@ -40,6 +40,25 @@
   src: local("Inter-Regular"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Inter\static\Inter-Regular.ttf") format('truetype');
   font-weight:bold;
 }
+@font-face {
+  font-family:'Inter';
+  src: local("Inter-Medium"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Inter\static\Inter-Medium.ttf") format('truetype');
+  font-weight:bold;
+}
+@font-face {
+  font-family:'Poppins';
+  src: local("Poppins-Bold"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Poppins\Poppins-Bold.ttf") format('truetype');
+  font-weight:bold;
+}
+@font-face {
+  font-family:'Poppins';
+  src: local("Poppins-SemiBold"), url("C:\Users\abena\OneDrive\Desktop\frontend\home_rentals\src\fonts\Poppins\Poppins-SemiBoldItalic.ttf") format('truetype');
+  font-weight:bold;
+}
+
+
+
+
 
 body {
   margin: 0;
@@ -57,6 +76,10 @@ code {
 
 .btn{
   @apply rounded py-2 px-2 text-sm cursor-pointer tracking-wider bg-orange-600 text-white
+}
+
+.btn-secondary{
+  @apply rounded py-4 px-32 text-sm cursor-pointer tracking-wider bg-orange-600 text-white
 }
 
 
