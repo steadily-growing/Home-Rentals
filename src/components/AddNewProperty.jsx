@@ -1,22 +1,15 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "../index.css";
 import { useDropzone } from "react-dropzone";
+import Footer from "./footer";
 
 function AddNewProperty(props) {
-  const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
-
-  const files = acceptedFiles.map((file) => (
-    <li key={file.path}>
-      {file.path} - {file.size} bytes
-    </li>
-  ));
-
   const baseStyle = {
     flex: 1,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "20px",
+    padding: "30px",
     borderWidth: 2,
     borderRadius: 2,
     borderColor: "#eeeeee",
@@ -25,7 +18,33 @@ function AddNewProperty(props) {
     color: "#bdbdbd",
     outline: "none",
     transition: "border .24s ease-in-out",
+    marginTop: "26px",
   };
+
+  const focusedStyle = {
+    borderColor: "#f4511e",
+  };
+
+  const acceptStyle = {
+    borderColor: "#f4511e",
+  };
+
+  const rejectStyle = {
+    borderColor: "#ff1744",
+  };
+
+  const { getRootProps, getInputProps, isFocused, isDragAccept, isDragReject } =
+    useDropzone({ accept: { "image/*": [] } });
+
+  const style = useMemo(
+    () => ({
+      ...baseStyle,
+      ...(isFocused ? focusedStyle : {}),
+      ...(isDragAccept ? acceptStyle : {}),
+      ...(isDragReject ? rejectStyle : {}),
+    }),
+    [isFocused, isDragAccept, isDragReject]
+  );
 
   return (
     <div className=" ">
@@ -144,7 +163,7 @@ function AddNewProperty(props) {
               <br />
               <input
                 type="text"
-                className="px-96 py-8 border   border-1 border-gray-300 rounded-md bg-gray-100"
+                className="px-96 py-8 border border-1 border-gray-300 rounded-md bg-gray-100"
                 placeholder="Enter Description"
               ></input>
               <br />
@@ -161,15 +180,23 @@ function AddNewProperty(props) {
             <br />
           </div> */}
           </form>
-          <div {...getRootProps({ className: "dropzone" })}>
-            <input className={baseStyle} {...getInputProps()} />
-            <p>Drag 'n' drop some files here, or click to select files</p>
+          <div className="container">
+            <div {...getRootProps({ style })}>
+              <input {...getInputProps()} />
+              <p className="font-[Poppins-Bold]">
+                Drag your images here or{" "}
+                <span className="text-orange-500"> browse</span>
+              </p>
+              <p className="font-[Poppins-Bold]">Supported: JPG, JPEG, PNG</p>
+            </div>
           </div>
         </div>
       </div>
       <div className="py-10 flex justify-center">
         <a className="btn-secondary">Add New Property</a>
       </div>
+
+      <Footer/>
     </div>
   );
 }

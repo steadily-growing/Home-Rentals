@@ -9,13 +9,7 @@ function FileUploader({ onDrop }) {
   })
 
   return (
-    <div {...getRootProps()} className="p-4 border-2 border-dashed border-gray-400 rounded-md">
-      <input {...getInputProps()} />
-      {isDragActive ? (
-        <p>Drop the files here ...</p>
-      ) : (
-        <p>Drag 'n' drop some files here, or click to select files</p>
-      )}
+    <div >
     </div>
   )
 }
