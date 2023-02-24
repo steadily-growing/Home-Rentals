@@ -13,14 +13,14 @@ import wifi from "../assets/wifi.png";
 
 function footer() {
   return (
-    <div >
+    <div className=" flex flex-col  px-[10%] py-[5%] w-full" >
       <div className="flex">
           {/* logo */}
       <div>logo</div>
       {/* details */}
-      <div>
+      <div className="">
         {/* first section :location phone and printer  */}
-        <div>
+        <div className="flex flex-col items-center justify-between w-[65%]">
           {/* location */}
           <div className="flex">
             <img src={landmark} />
@@ -43,7 +43,7 @@ function footer() {
       </div>
     
       {/* social media */}
-      <div className="flex">
+      <div className="flex items-center justify-between w-[65%]">
         <div>Social Media</div>
         <img src={fbk}/>
         <img src={twt}/>
